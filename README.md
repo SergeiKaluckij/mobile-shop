@@ -1,97 +1,46 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+[Русский](/README.ru_RU.md)
 
-# Getting Started
+## 📱 Mobile Shop
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+**Mobile Shop** is a mini React Native application for placing orders from a large product list. It was developed as a test assignment to demonstrate proficiency in TypeScript and MobX.
 
-## Step 1: Start Metro
+### 🔑 Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- 📦 Add and remove products from the cart (up to 1000 items)
+- ⚙️ Select order options (leave at the door, call upon delivery, etc.)
+- 📊 Send analytics events to the backend on any change in the cart or options (with simulated errors and result logging)
+- 🧾 Order confirmation screen showing selected items, options, and total amount
+- ✅ Minimum order amount validation (1000 ₽)
+- 🚫 Handle possible backend errors when placing an order (e.g., item out of stock, service unavailable, order below minimum)
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### 🧰 Technologies
 
-```sh
-# Using npm
-npm start
+- **React Native** (without Expo)
+- **TypeScript** — strict typing and data model definitions
+- **MobX** — state management and reactivity
+- Optional use of third-party UI libraries — clean and user-friendly design is encouraged
 
-# OR using Yarn
-yarn start
-```
+### 📝 Note
 
-## Step 2: Build and run your app
+A real backend is not required. All backend responses and errors are simulated in the code for testing purposes.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+---
 
-### Android
+## 🧑‍💻 Git Commit Workflow
 
-```sh
-# Using npm
-npm run android
+This project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to maintain consistent commit messages.
 
-# OR using Yarn
-yarn android
-```
+### 🔧 Commit types
 
-### iOS
+- `feat`: A new feature  
+  _Example_: `feat: add cart`
+- `fix`: A bug fix  
+  _Example_: `fix: handle out-of-stock error`
+- `docs`: Documentation changes only  
+  _Example_: `docs: update README with commit workflow`
+- `chore`: Routine tasks, tooling, configs (no user-facing change)  
+  _Example_: `chore: update dependencies`
+- `refactor`: Code refactoring that doesn't add features or fix bugs  
+  _Example_: `refactor: simplify MobX logic`
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### 📝 Example full commit
